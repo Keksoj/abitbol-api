@@ -7,7 +7,7 @@ Pour inclure une citation aléatoire de la Classe Américaine dans votre site, r
 ```html
 <div id="place"></div>
 <script>
-  fetch("54.37.75.123:4000/abitbol")
+  fetch("http://54.37.75.123:4000/abitbol")
     .then(response => response.text())
     .then(result => (document.getElementById("place").innerHTML = result));
 </script>
