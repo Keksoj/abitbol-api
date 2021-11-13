@@ -1,7 +1,7 @@
 var http = require("http");
 var quotes = require("./quotes.json");
-var port = process.env.PORT;
-
+var PORT = process.env.PORT || 8080;
+const HOST = process.env.HOST || '0.0.0.0';
 
 var server = http.createServer(function(req, res) {
 
@@ -28,5 +28,6 @@ var server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(port);
+server.listen(PORT);
 console.log(`api is running on`, server);
+console.log(`and listens to port`, port);
