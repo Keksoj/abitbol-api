@@ -30,4 +30,4 @@ var server = http.createServer(function(req, res) {
 
 server.listen(PORT);
 console.log(`api is running on`, server);
-console.log(`and listens to port`, port);
+console.log(`and listens to port`, PORT);
