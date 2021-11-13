@@ -18,7 +18,7 @@ var server = http.createServer(function(req, res) {
     });
 
     // choose one random quote
-    var i = Math.floor(Math.random() * 70);
+    var i = Math.floor(Math.random() * 72);
     var quote = quotes[i];
     res.write(quote);
     res.end();
