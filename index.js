@@ -1,3 +1,4 @@
+var package = require("./package.json");
 var http = require("http");
 var quotes = require("./quotes.json");
 
@@ -28,5 +29,5 @@ var server = http.createServer(function(req, res) {
 });
 
 // ouais mon port 3000 est déjà occupé par une autre appli
-server.listen(4000);
-console.log('api is running on http://localhost:4000/abitbol');
+server.listen(package.config.port);
+console.log(`api is running on`, server);
