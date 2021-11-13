@@ -28,6 +28,6 @@ var server = http.createServer(function(req, res) {
   }
 });
 
-server.listen(PORT);
+server.listen(PORT, HOST);
 console.log(`api is running on`, server);
-console.log(`and listens to port`, PORT);
+console.log(`and listens to ${HOST}:${PORT}`);
